@@ -10,6 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@babel/plugin-proposal-optional-chaining": "^7.14.5",
         "@inertiajs/inertia": "^0.8.2",
         "@inertiajs/inertia-vue3": "^0.3.5",
         "@inertiajs/progress": "^0.2.4",
@@ -28,7 +29,8 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.3",
-        "@webcityro/larasearch-vue3": "^1.0.3",
+        "@webcityro/larasearch-vue3": "^1.1.*",
+        "vue3-click-away": "^1.2.1",
         "vuex": "^4.0.0"
     }
 }

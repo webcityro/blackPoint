@@ -38,21 +38,9 @@
 </template>
 
 <script>
+  import BaseAlert from "../mixins/BaseAlert";
+
   export default {
-    data() {
-      return {
-        show: true,
-      }
-    },
-
-    computed: {
-      style() {
-        return this.$page.props.jetstream.flash?.bannerStyle || 'success'
-      },
-
-      message() {
-        return this.$page.props.jetstream.flash?.banner || ''
-      },
-    }
+    mixins: [BaseAlert]
   }
 </script>
