@@ -41,25 +41,11 @@ class UserController extends Controller
 		);
 	}
 
-	public function create()
-	{
-	}
-
 	public function store(StoreUserRequest $request): JsonResponse
 	{
 		$newUser = User::create($request->validated());
 		$newUser->attachRoles($request->role_ids);
 		return response()->json(['message' => 'The user was created successfully.'], 201);
-	}
-
-	public function show(User $user)
-	{
-		//
-	}
-
-	public function edit(User $user)
-	{
-		//
 	}
 
 	public function update(UpdateUserRequest $request, User $user): JsonResponse
